@@ -1,0 +1,40 @@
+body {
+    background: #f2f2f2;
+    color: #3333;
+}
+h1, h2, h3, h4, h5, h6, p {
+	color: #444;
+}
+
+ul {
+	margin: 0;
+}
+.container .post-container .post-title, .post-title a {
+    text-decoration: none;
+    font-family: georgia;
+    color: blue;
+}
+.post-container, .content-section {
+	width: 50%;
+	padding: 0.5em;
+	margin: 1em;
+	background: #fff;
+	border-radius: 5px;
+}
+.content-section {
+    color: #000;
+}
+.img-thumbnail {
+    float: right;
+    width: 30%;
+}
+.profile-details li {
+    list-style-type: none;
+    color: #333;
+    font-size: 2.5rem;
+    padding-bottom: 0.5em;
+}
+.btn {
+    border-color: #000;
+    color: #000;
+}

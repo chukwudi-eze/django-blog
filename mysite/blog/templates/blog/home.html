@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post-container">
+            <h2 class="post-title">
+                <img src="{{ post.author.profile.image.url }}" class="img-circle" alt="{{ post.author }}'s profile image" width="80" height="70" title="{{ post.author }}">
+                <a href="{% url 'post-detail' post.id %}">{{ post.title }}</a>
+            </h2>
+            <p class="post-content">{{ post.content }}</p>
+            <hr>
+            <p class="post-details">By {{post.author}} on {{ post.date_posted|date:"F d, Y" }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
